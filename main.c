@@ -38,7 +38,7 @@ void SYS_Init(void)
     /*---------------------------------------------------------------------------------------------------------*/
     /* Init I/O Multi-function                                                                                 */
     /*---------------------------------------------------------------------------------------------------------*/
-    /* Set PB multi-function pins for UART0 RXD=PB.12 and TXD=PB.13 */
+    /* Set PB multi-function pins for UART0 RXD=PF.2 and TXD=PF.3 */
     SYS->GPF_MFPL &= ~(SYS_GPF_MFPL_PF2MFP_Msk | SYS_GPF_MFPL_PF3MFP_Msk);
     SYS->GPF_MFPL |= (SYS_GPF_MFPL_PF2MFP_UART0_RXD | SYS_GPF_MFPL_PF3MFP_UART0_TXD);
 }
